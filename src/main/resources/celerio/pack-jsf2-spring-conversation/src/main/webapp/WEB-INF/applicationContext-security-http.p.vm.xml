@@ -1,0 +1,30 @@
+$output.skipIf($CONTAINER_SECURITY)##
+$output.webinf("applicationContext-security-http.xml")##
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+	<!-- public pages -->
+	<http pattern="/" security="none" />
+	<http pattern="/favicon.ico" security="none" />
+	<http pattern="/resources/*" security="none" />
+	<http pattern="/javax.*/**" security="none" />
+	<http pattern="/login.faces*" security="none" />
+	<http pattern="/error/*" security="none" />
+	
+	<!-- secure pages -->
+    <http disable-url-rewriting="false">
+        <intercept-url pattern="/home.faces" access="permitAll()" />
+        <intercept-url pattern="/logout*" access="isAuthenticated()" />
+        <intercept-url pattern="/domain/**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/monitoring**" access="hasRole('ROLE_MONITORING')" />
+
+        <access-denied-handler error-page="/error/accessdenied.faces" />
+        <form-login login-page="/login.faces" />
+        <logout logout-url="/logout.faces" logout-success-url="/home.faces" />
+
+        <headers disabled="true"/>
+        <csrf disabled="true"/>
+    </http>
+</beans:beans>

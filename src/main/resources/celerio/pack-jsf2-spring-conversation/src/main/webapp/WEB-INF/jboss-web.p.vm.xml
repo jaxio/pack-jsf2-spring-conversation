@@ -1,0 +1,8 @@
+$output.generateIf($CONTAINER_SECURITY)##
+$output.webinf("jboss-web.xml")##
+<jboss-web>
+	<security-domain>$configuration.applicationName</security-domain>
+	<valve>
+		<class-name>org.jboss.as.web.security.jaspi.WebJASPIAuthenticator</class-name>
+	</valve>
+</jboss-web>
