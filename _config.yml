@@ -1,0 +1,3 @@
+markdown: redcarpet
+highlighter: true
+port: 4444
