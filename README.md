@@ -1,5 +1,7 @@
 ## Celerio Generation Template Pack: JSF 2 Spring Conversation
 
+[![Build Status](https://travis-ci.org/jaxio/pack-jsf2-spring-conversation.svg?branch=master)](https://travis-ci.org/jaxio/pack-jsf2-spring-conversation)
+
 The Celerio Generation Template Pack "JSF 2 Spring Conversation" contains a set of source code file templates that
 are interpreted by Celerio code generator in order to generate a web application.
 
