@@ -1059,22 +1059,6 @@ GRANT CONNECT, RESOURCE TO ${dollar}{database.user};
                     </loginServices>
 #end
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>start-jetty</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>start</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>stop-jetty</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>stop</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <!-- http://maven.apache.org/plugins/maven-failsafe-plugin/ -->
