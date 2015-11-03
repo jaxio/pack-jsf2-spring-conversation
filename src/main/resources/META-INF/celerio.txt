@@ -3,4 +3,5 @@ packVersion=${project.version}
 packDescription=PrimeFaces 5.2, JSF 2.2, JPA 2.1/Hibernate 5, Spring 4.2
 packDescription2=Advanced CRUD web application with conversation support in Java.
 packCommand=mvn -Ph2,db,metadata,gen jetty:run
+packCommandHelp=Then open http://localhost:8080/
 projectLink=https://github.com/jaxio/pack-jsf2-spring-conversation
