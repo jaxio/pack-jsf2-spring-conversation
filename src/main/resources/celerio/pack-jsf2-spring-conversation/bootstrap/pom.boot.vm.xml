@@ -142,14 +142,15 @@ $output.file("pom.xml")##
                 <!-- misc -->
                 <sql-maven-plugin.delimiter>;</sql-maven-plugin.delimiter>
             </properties>
+            <!-- db2 License dependency
             <dependencies>
-                <!-- db2 License dependency -->
                 <dependency>
                     <groupId>com.ibm.db2</groupId>
                     <artifactId>db2jcc_license_cu</artifactId>
                     <version>9.7.0.4</version>
                 </dependency>
             </dependencies>
+            -->
         </profile>
         <profile>
             <id>mysql</id>
@@ -1115,9 +1116,6 @@ GRANT CONNECT, RESOURCE TO ${dollar}{database.user};
                         <goals>
                             <goal>start</goal>
                         </goals>
-                        <configuration>
-                            <daemon>true</daemon>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>stop-jetty</id>
