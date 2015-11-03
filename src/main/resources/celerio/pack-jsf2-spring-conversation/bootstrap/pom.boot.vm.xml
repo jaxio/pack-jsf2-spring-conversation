@@ -865,32 +865,6 @@ GRANT CONNECT, RESOURCE TO ${dollar}{database.user};
             <version>${dollar}{spring.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- Selenium ...
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.47.2</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>xml-apis</groupId>
-            <artifactId>xml-apis</artifactId>
-            <version>1.4.01</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.palominolabs.xpath</groupId>
-            <artifactId>xpath-utils</artifactId>
-            <version>1.0.1</version>
-            <scope>test</scope>
-        </dependency>
-        -->
     </dependencies>
     <!-- ~~~~~~~~~~~~ -->
     <!-- REPOSITORIES -->
@@ -951,30 +925,6 @@ GRANT CONNECT, RESOURCE TO ${dollar}{database.user};
                         <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
                     </nonFilteredFileExtensions>
                 </configuration>
-            </plugin>
-            <plugin>
-                <!-- http://maven.apache.org/plugins/maven-enforcer-plugin/ -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.4.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-java</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireJavaVersion>
-                                    <version>[1.6.0-26,)</version>
-                                </requireJavaVersion>
-                                <requireMavenVersion>
-                                    <version>3.0.3</version>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
