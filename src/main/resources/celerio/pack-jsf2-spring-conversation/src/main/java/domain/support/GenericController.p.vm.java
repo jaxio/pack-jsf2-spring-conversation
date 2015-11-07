@@ -157,7 +157,7 @@ public abstract class ${output.currentClass}<E extends Identifiable<PK>, PK exte
                 .limitBroadSearch() //
                 .caseInsensitive() //
                 .anywhere() //
-                .distinct();
+                .distinct(). //
                 .orMode();
             E template = repository.getNew();
 
