@@ -15,7 +15,7 @@ $output.webapp("$entity.model.subPackagePath", "${entity.model.var}Select.xhtml"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
-	xmlns:app="http://springfuse.jaxio.com/app"
+	xmlns:app="http://jaxio.com/app"
 	xmlns:appcc="http://xmlns.jcp.org/jsf/composite/components">
 	<app:search title="${entity.labelName}_search" model="#{$entity.lazyDataModel.var}" searchForm="#{${entity.searchForm.var}}"
 		controller="#{${entity.controller.var}}" permission="#{${entity.webPermission.var}}"#{if}($project.isSavedSearchPresent()) savedSearch="true"#{end}#{if}($entity.isIndexed()) fullText="true"#{end}>

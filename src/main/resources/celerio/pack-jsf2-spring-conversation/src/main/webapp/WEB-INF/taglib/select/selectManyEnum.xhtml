@@ -4,7 +4,7 @@
 	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
-	xmlns:app="http://springfuse.jaxio.com/app">
+	xmlns:app="http://jaxio.com/app">
 	<app:outputLabel for="#{id}" value="#{label}" required="#{required}" rendered="#{rendered}" />
 	<p:selectManyCheckbox id="#{id}" value="#{value.selected}" rendered="#{empty rendered ? true : rendered}" disabled="#{empty disabled ? false : disabled}"
 		layout="#{items.list.size() lt 5 ? 'lineDirection' : 'pageDirection'}"
