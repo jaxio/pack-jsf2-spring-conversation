@@ -155,21 +155,26 @@ public abstract class ${output.currentClass}<E extends Identifiable<PK>, PK exte
         try {
             SearchParameters searchParameters = new SearchParameters() //
                 .limitBroadSearch() //
-                .distinct() //
+                .caseInsensitive() //
+                .anywhere() //
+                .distinct();
                 .orMode();
             E template = repository.getNew();
-            for (String property : completeProperties()) {
+
+            if (!isBlank(value)) {
+                for (String property : completeProperties()) {
 #if($project.hibernateSearchUsed)
 $output.require("com.jaxio.jpa.querybyexample.MetamodelUtil")##
-                if (repository.isIndexed(property)) {
-                    searchParameters.addTerm(new TermSelector(metamodelUtil.toAttribute(property, repository.getType())).selected(value));
-                } else {
-                    searchParameters.anywhere().caseInsensitive();
-                    searchParameters.addProperty(newPropertySelector(property, repository.getType()).selected(value));
-                }
+                    if (repository.isIndexed(property)) {
+                        searchParameters.addTerm(new TermSelector(metamodelUtil.toAttribute(property, repository.getType())).selected(value));
+                    } else {
+                        searchParameters.anywhere().caseInsensitive();
+                        searchParameters.addProperty(newPropertySelector(property, repository.getType()).selected(value));
+                    }
 #else
-                searchParameters.addProperty(newPropertySelector(property, repository.getType()).selected(value));
+                    searchParameters.addProperty(newPropertySelector(property, repository.getType()).selected(value));
 #end
+                }
             }
             return repository.find(template, searchParameters);
         } catch(Exception e) {
