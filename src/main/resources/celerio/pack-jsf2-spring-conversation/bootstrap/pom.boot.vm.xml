@@ -229,12 +229,12 @@ $output.file("pom.xml")##
                             <dependency>
                                 <groupId>com.jaxio.celerio.packs</groupId>
                                 <artifactId>pack-backend-jpa</artifactId>
-                                <version>1.0.1-SNAPSHOT</version>
+                                <version>1.0.1</version>
                             </dependency>
                             <dependency>
                                 <groupId>com.jaxio.celerio.packs</groupId>
                                 <artifactId>pack-jsf2-spring-conversation</artifactId>
-                                <version>1.0.1-SNAPSHOT</version>
+                                <version>1.0.1</version>
                             </dependency>
                         </dependencies>
                     </plugin>
@@ -303,7 +303,7 @@ $output.file("pom.xml")##
         <dependency>
             <groupId>com.jaxio</groupId>
             <artifactId>jpa-querybyexample</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 
         <!-- ~~~~~~~~~~~ -->
