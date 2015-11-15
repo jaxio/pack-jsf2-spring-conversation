@@ -192,18 +192,6 @@ $output.file("pom.xml")##
                     </plugin>
                 </plugins>
             </build>
-            <repositories>
-                <repository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
         <profile>
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -229,29 +217,17 @@ $output.file("pom.xml")##
                             <dependency>
                                 <groupId>com.jaxio.celerio.packs</groupId>
                                 <artifactId>pack-backend-jpa</artifactId>
-                                <version>1.0.1</version>
+                                <version>1.0.2</version>
                             </dependency>
                             <dependency>
                                 <groupId>com.jaxio.celerio.packs</groupId>
                                 <artifactId>pack-jsf2-spring-conversation</artifactId>
-                                <version>1.0.1</version>
+                                <version>1.0.2</version>
                             </dependency>
                         </dependencies>
                     </plugin>
                 </plugins>
             </build>
-            <repositories>
-                <repository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
         <profile>
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -275,18 +251,6 @@ $output.file("pom.xml")##
                     </plugin>
                 </plugins>
             </build>
-            <repositories>
-                <repository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>jaxio-repository</id>
-                    <url>http://maven.jaxio.com/repository</url>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
     </profiles>
     <!-- ~~~~~~~~~~~~ -->
