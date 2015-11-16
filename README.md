@@ -9,10 +9,21 @@ This pack depends on the [JPA Backend pack](https://github.com/jaxio/pack-backen
 
 ## Generate an application
 
-This pack is part of Celerio distribution, to generate an application from this pack,
-please follow [Celerio Documentation](http://www.jaxio.com/documentation/celerio).
+This pack is part of Celerio distribution.
+
+Have already Maven 3 and Java 1.8 installed ?
+
+To generate an application from this pack simply execute:
+
+    mvn com.jaxio.celerio:bootstrap-maven-plugin:4.0.2:bootstrap
+
+Please read [Celerio Documentation](http://www.jaxio.com/documentation/celerio) for more details.
 
 ## Change Log
+
+### 1.0.2
+
+* Uses Celerio 4.0.2. As a result, no longer need to use Jaxio's repository since Celerio is now on Maven Central.
 
 ### 1.0.1
 
