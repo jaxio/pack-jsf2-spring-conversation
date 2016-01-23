@@ -60,22 +60,11 @@
         <url>http://github.com/jaxio/pack-jsf2-spring-conversation/issues#issue/</url>
     </issueManagement>
 
-
     <build>
         <resources>
             <resource>
-                <filtering>true</filtering>
-                <directory>${basedir}/src/main/resources</directory>
-                <includes>
-                    <include>META-INF/celerio-pack.xml</include>
-                </includes>
-            </resource>
-            <resource>
                 <filtering>false</filtering>
                 <directory>${basedir}/src/main/resources</directory>
-                <excludes>
-                    <exclude>META-INF/celerio-pack.xml</exclude>
-                </excludes>
             </resource>
         </resources>
         <plugins>
