@@ -10,7 +10,8 @@
 			completeMethod="#{controller[(empty completeMethod) ? 'complete' : completeMethod]}"
 			var="item"
 			itemValue="#{item}"
-			itemLabel="#{item}"
+			itemLabel="#{printer.print(item)}"
+			converter="#{genericJsfConverter}"
 			multiple="true"
 			styleClass="#{styleClass}"
 			forceSelection="false">
