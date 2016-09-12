@@ -7,7 +7,7 @@
 
     <groupId>com.jaxio.celerio.packs</groupId>
     <artifactId>pack-jsf2-spring-conversation</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <name>celerio pack-jsf2-spring-conversation-jpa</name>
@@ -52,7 +52,7 @@
         <connection>scm:git:git://github.com/jaxio/pack-jsf2-spring-conversation.git</connection>
         <developerConnection>scm:git:git@github.com:jaxio/pack-jsf2-spring-conversation.git</developerConnection>
         <url>http://github.com/jaxio/pack-jsf2-spring-conversation/</url>
-        <tag>HEAD</tag>
+        <tag>pack-jsf2-spring-conversation-1.0.4</tag>
     </scm>
 
     <issueManagement>
