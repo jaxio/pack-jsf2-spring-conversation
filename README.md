@@ -21,6 +21,10 @@ Please read [Celerio Documentation](http://www.jaxio.com/documentation/celerio) 
 
 ## Change Log
 
+### 1.0.3 on 2016-08-29
+
+* Fix inputMultiAutoComplete and inputMultiEnumAutoComplete components
+
 ### 1.0.2
 
 * Uses Celerio 4.0.2. As a result, no longer need to use Jaxio's repository since Celerio is now on Maven Central.
